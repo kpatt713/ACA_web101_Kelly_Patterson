@@ -10,5 +10,26 @@ main {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 article:nth-child(odd) {
-    background-color: rgba(168, 168, 168, 0.699);
+    background-color: lightgray;
+    padding: 3px;
+}
+article:nth-child(even) {
+    border: 1px solid darkgreen;
+    padding: 3px;
+}
+
+.byline {
+    color: darkgreen;	
+}
+
+h2 {
+    color: midnightblue;
+    text-shadow: 25px;
+}
+
+span {
+    color: darkgreen;
+}
+p::first-letter {
+    font-size: 125%;
 }
