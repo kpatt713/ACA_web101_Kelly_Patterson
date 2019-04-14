@@ -1,28 +1,35 @@
 header {
+    padding:20px;
+    margin: 0px;
     text-align:center;
     font-family: Century;
-    background-color: blanchedalmond
+    background-color: #e7e6e4;
+    line-height: 10px;
 }
 .name{
-    font-size: 30px;
+    padding: 0px;
+    font-size: 35px;
+    letter-spacing: .1em;
 }
 .title{
-    font-size: 15px;
+    padding: 0px;
+    font-size: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .6em;
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .sidebar {
     float:left;
-    background-color: black;
+    background-color: #424549;
     color: white;
     padding: 30px;
+    margin-left: 0px;
+    margin-right: 75px;
 }
-img {
-    border-radius: 50%;   
-}
+
 main {
-    float: right;
-    width: 655px;
+    float: center;
+    padding-left: 30px;
 }
