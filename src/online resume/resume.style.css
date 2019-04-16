@@ -1,28 +1,57 @@
-header {
-    text-align:center;
-    font-family: Century;
-    background-color: blanchedalmond
-}
-.name{
-    font-size: 30px;
-}
-.title{
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
 .sidebar {
-    float:left;
-    background-color: black;
+    grid-area: sidebar;
+    background-color: rgb(61, 61, 61);
     color: white;
-    padding: 30px;
+    padding: 15px;
+    margin-right: 25px;
 }
 img {
     border-radius: 50%;   
 }
-main {
-    float: right;
-    width: 655px;
+.summary {
+    grid-area: summary;
+}
+}
+.workExperience {
+    grid-area: workExperience;
+}
+}
+.USCA {
+    grid-area: USCA;
+}
+.ACLU {
+    grid-area: ACLU;
+}
+body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 10% 25% 25% 25%;
+    grid-template-areas:
+    "header   header"
+    "sidebar      summary"
+    "sidebar  workExperience"
+    "sidebar   USCA"
+    "sidebar   ACLU";
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+header {
+    grid-area: header;
+    text-align:center;
+    font-family: Century;
+    background-color: lightgray
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 15px;
+}
+.name{
+    font-size: 40px;
+    margin-bottom:0;
+}
+.title{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
 }
