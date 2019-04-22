@@ -1,0 +1,59 @@
+
+body {
+    width: 850px;
+    height: 774px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    width: 850px;
+    height: 450px;
+    margin-bottom: 20px;
+    background-image: url(galaxy.jpg);
+    background-repeat: no-repeat;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    letter-spacing: .2em;
+    line-height: 5em;
+
+}
+
+footer {
+    display: flex;
+    width: 850px;
+    height: 324px;
+}
+
+
+footer article{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    width: 270px;
+    height: 324px;
+    background: lightgray;
+}
+
+li {
+    list-style-type: none;
+    color: rgb(85, 84, 84);
+    line-height: 1.6em;
+    text-align: start;
+}
+
+form {
+    line-height: 1.6em;
+}
+
+input[type="submit"] {
+    height: 30px;
+    width: 70px;
+    background-color: rgb(85, 84, 84);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: .1em;
+    margin-top: 8px;
+    
+}
