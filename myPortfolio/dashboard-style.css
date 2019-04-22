@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    background: linear-gradient(rgb(211, 132, 42), rgb(113, 197, 193));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.to-do {
+    grid-area: toDo;
+    align-self: center;
+}
+
+
+
+#calculator{
+    align-self: center;
+    display: flex;
+    width: 160px;
+    height: 200px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 3px solid #4d4d4d;
+    background: rgba(211, 132, 42, 0.651);
+  }
+  .text {
+    width: 90%;
+    margin: 5px;
+    border: 1px rgb(113, 197, 193);
+    text-align: right;
+    font: 20px;
+    color: #4d4d4d;
+  }
+  
+  input[type="button"]{
+    width: 25%;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background: rgb(113, 197, 193);
+    font-weight: bold;
+  }
+  
+  input[type="button"]:last-child {
+    width: 50%;
+    cursor: pointer;
+  }
+
+
+
+#dateTimedisplay {
+    grid-area: dateTime;
+    align-self: end;
+    font-size: 250%;
+}
+.greeting {
+    grid-area: greeting;
+    font-size: 600%;
+}
+body{
+    display: grid;
+    grid-column: 20% 80%;
+    grid-row: 70% 30%;
+    grid-template-areas:
+    "toDo    dateTime"
+    "calculator   greeting";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4d4d4d;
+}
+ul {
+    font-weight:bold;
+    font-size: 150%
+}
