@@ -1,3 +1,9 @@
+@media (min-width: 800px) and (max-width: 1500px) {
+  .weatherWidget{
+    display: none;
+  }
+}
+
 body, html {
     height: 100%;
     background: linear-gradient(rgb(211, 132, 42), rgb(113, 197, 193));
@@ -9,6 +15,7 @@ body, html {
     grid-area: toDo;
     align-self: center;
 }
+
 
 
 
@@ -71,4 +78,89 @@ body{
 ul {
     font-weight:bold;
     font-size: 150%
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+  #calculator {
+    display:none;
+  }
+
+  .weatherWidget {
+    grid-area: weather;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .weatherWidget ul {
+    list-style: none;
+    font-size: 100%;
+  }
+  
+  .weatherWidget h2 {
+    font-size: 200%;
+    letter-spacing: .1em;
+  }
+
+  body {
+    display: grid;
+    grid-column: 70% 30%;
+    grid-row: 20% 60% 20%;
+    grid-template-areas:
+    "weather   weather"
+    "toDo   dateTime"
+    "greeting   greeting";
+  }
+  #dateTimedisplay {
+    align-self: flex-start;
+    padding-top: 15px;
+  }
+  .to-do {
+    align-self: flex-start;
+  }
+  .greeting {
+    font-size: 500%;
+  }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  #dateTimedisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 150%
+  }
+  body {
+    display: grid;
+    grid-column: 50% 50%;
+    grid-row: 50% 15% 35%;
+    grid-template-areas: 
+    "toDo   weather"
+    "dateTime   dateTime"
+    "greeting   greeting";   
+  }
+  .weatherWidget {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .weatherWidget h2 {
+    font-size: 150%;
+  }
+
+  .greeting {
+    font-size: 400%;
+  }
+ 
 }
