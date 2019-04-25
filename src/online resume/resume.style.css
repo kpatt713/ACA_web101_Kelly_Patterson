@@ -1,26 +1,21 @@
-.sidebar {
-    grid-area: sidebar;
-    background-color: rgb(61, 61, 61);
-    color: white;
-    padding: 15px;
-    margin-right: 25px;
+header {
+    padding:20px;
+    margin: 0px;
+    text-align:center;
+    font-family: Century;
+    background-color: #e7e6e4;
+    line-height: 10px;
 }
-img {
-    border-radius: 50%;   
+.name{
+    padding: 0px;
+    font-size: 35px;
+    letter-spacing: .1em;
 }
-.summary {
-    grid-area: summary;
-}
-}
-.workExperience {
-    grid-area: workExperience;
-}
-}
-.USCA {
-    grid-area: USCA;
-}
-.ACLU {
-    grid-area: ACLU;
+.title{
+    padding: 0px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .6em;
 }
 body {
     display: grid;
@@ -34,17 +29,18 @@ body {
     "sidebar   ACLU";
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-header {
-    grid-area: header;
-    text-align:center;
-    font-family: Century;
-    background-color: lightgray
+.sidebar {
+    float:left;
+    background-color: #424549;
+    color: white;
+    padding: 30px;
+    margin-left: 0px;
+    margin-right: 75px;
 }
-h1 {
-    font-size: 20px;
-}
-h2 {
-    font-size: 15px;
+
+main {
+    float: center;
+    padding-left: 30px;
 }
 .name{
     font-size: 40px;
