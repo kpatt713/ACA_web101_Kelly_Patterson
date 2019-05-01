@@ -28,14 +28,19 @@ nav a:hover {
 }
 
 
-.main {
-    width: 1200px;
-    height: 492px;
-    background-image: url(./images/desert.jpg);
-    background-repeat: no-repeat;
-    margin-left:9%;
-    padding-left: 50%;
-    padding-top: 5%;
+.banner img {
+    width:100%;
+    display: block;
+}
+
+.text {
+    display: block;
+    width: 490px;
+    text-align:left;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: 15%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -130,3 +135,63 @@ footer section {
     height: 20px;
     width: 100px;
 }
+
+
+@media (max-width:800px) {
+    .text {
+        display: block;
+        width: 250px;
+        text-align:left;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        margin-left: 10%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .line1 {
+        background-color: white;
+        font-size: 75%;
+        letter-spacing: .1em;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    #paragraph {
+        background-color: rgb(41, 41, 41);
+        color: white;
+        font-size: 50%;
+        letter-spacing: .1em;
+        padding: 10px;
+        width: 175px;
+    }
+
+    input[type=button] {
+        padding: 20px;
+        background-color: teal;
+        color: white;
+        font-size: 75%;
+        border: 0px;
+    }
+
+    .styles {
+        justify-content: space-evenly;
+    }
+    .styles img {
+        width: 95%;
+    }
+    .styles article p {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        display: none;
+    }
+}
+
+
+
+
+    
