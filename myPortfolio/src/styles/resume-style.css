@@ -4,8 +4,14 @@ header {
     text-align:center;
     font-family: Century;
     background-color: #e7e6e4;
-    line-height: 10px;
+    line-height: 30px;
 }
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
 .name{
     padding: 0px;
     font-size: 35px;
@@ -17,18 +23,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: .6em;
 }
-body {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 15% 10% 25% 25% 25%;
-    grid-template-areas:
-    "header   header"
-    "sidebar      summary"
-    "sidebar  workExperience"
-    "sidebar   USCA"
-    "sidebar   ACLU";
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
+
 .sidebar {
     float:left;
     background-color: #424549;
@@ -41,11 +36,9 @@ body {
 main {
     float: center;
     padding-left: 30px;
+    margin-top: 20px;
 }
-.name{
-    font-size: 40px;
-    margin-bottom:0;
-}
+
 .title{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

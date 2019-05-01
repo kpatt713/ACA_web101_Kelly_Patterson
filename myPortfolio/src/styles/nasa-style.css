@@ -9,7 +9,7 @@ header {
     width: 850px;
     height: 450px;
     margin-bottom: 20px;
-    background-image: url(galaxy.jpg);
+    background-image: url(../images/galaxy.jpg);
     background-repeat: no-repeat;
     font-size: 80px;
     color: white;

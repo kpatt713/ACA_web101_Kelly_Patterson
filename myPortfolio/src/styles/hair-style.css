@@ -31,7 +31,7 @@ nav a:hover {
 .main {
     width: 1200px;
     height: 492px;
-    background-image: url(hair/desert.jpg);
+    background-image: url(./images/desert.jpg);
     background-repeat: no-repeat;
     margin-left:9%;
     padding-left: 50%;
