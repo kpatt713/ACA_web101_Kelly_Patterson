@@ -1,0 +1,53 @@
+body {
+    font-family: 'Garamond', 'Georgia', 'Palatino';
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-row: 15% 30$ 25% 30%;
+    grid-template-areas: 
+    "banner"
+    "container"
+    "videos"
+    "form"
+}
+
+.banner {
+    grid-area: "banner";
+    justify-content: center;
+}
+
+.container {
+    justify-content: center;
+    grid-area: "container";
+    display: flex;
+    flex-direction: row;
+}
+
+.container article {
+    align-content: space-around;
+}
+
+.container article img {
+    display: block;
+    border: rgb(134, 134, 134) solid 1px;
+}
+
+.videos {
+    grid-area: "videos";
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+    align-content: space-around;
+    margin-bottom: 50px;
+}
+
+.videos iframe {
+}
+
+form {
+    grid-area: "form";
+    justify-content: center;
+}

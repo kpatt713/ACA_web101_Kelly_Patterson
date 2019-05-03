@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/portfolio-style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <a href="./dashboard.html">Dashboard</a>
-    <a href="./src/hair.html">Hair Salon Landing Page</a>
+    <main>
+        <div class=banner>
+            <header>
+                <h1>My Work</h1>
+            </header>
+            <nav>
+
+            </nav>
+        </div>
+        <div class=container>
+            <article>
+                <img src="images/dashboard.JPG"> 
+                <a href="./dashboard.html">Dashboard Design</a>
+            </article>
+            <article>
+                <img src="images/hair.JPG">
+                <a href="./src/hair.html">Hair Salon Landing Page</a>
+            </article>
+            <article>
+                <img src="images/nasa.JPG">
+                <a href="./src/nasa.html">NASA Landing Page</a>
+            </article>
+        </div>
+        <div class=videos>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FX2AEfZpWT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video height="315" controls>
+                    <source src="images/willow.mp4" type="video/mp4">
+                </video>
+        </div>
+        <form>
+            Name <input type=text placeholder="First and Last Name">
+            Email <input type="email" placeholder="Email Address">
+            Location <input type=text placeholder="City and State">
+            Message <input type=text placeholder="Enter Message Here">
+            <button type="reset" value="reset">Clear Form</button>
+            <button type="submit" value="submit">Send</button>
+        </form>
 </body>
 </html>
