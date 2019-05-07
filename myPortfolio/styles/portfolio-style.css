@@ -16,28 +16,58 @@ main {
 
 .banner {
     grid-area: "banner";
-    justify-content: center;
+    width: 100%;
+}
+
+
+
+.nav a{
+    text-decoration: none;
+    justify-content: space-evenly;
+    font-size: 200%;
+    padding: 5%;
+    margin-left: 5%;
+    color: black;
+
+} 
+
+.nav a:hover {
+    color: rgb(50, 150, 120);
+}
+
+.container article a{
+    text-decoration: none;
+    font-size: 150%;
+    color: black;
+}
+
+h1 {
+    font-size: 600%;
+    padding-left: 35%;
 }
 
 .container {
-    justify-content: center;
+    justify-content: space-between;
     grid-area: "container";
     display: flex;
     flex-direction: row;
+    margin: 10%;
+    padding: 10px;
 }
 
 .container article {
     align-content: space-around;
 }
 
-.container article img {
+img {
     display: block;
-    border: rgb(134, 134, 134) solid 1px;
+    height: 200px;
+    border: black solid 2px;
 }
 
 .videos {
     grid-area: "videos";
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction:row;
     align-content: space-around;
@@ -49,5 +79,15 @@ main {
 
 form {
     grid-area: "form";
-    justify-content: center;
+    margin: 10% 1% 20% 40%;
+    font-size: 130%;
+    background-color: lightgrey;
+    border: black solid 1px;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+}
+
+form input {
+    margin: 5px;
 }
