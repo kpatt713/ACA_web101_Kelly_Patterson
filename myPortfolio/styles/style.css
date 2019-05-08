@@ -68,7 +68,8 @@ h1 {
   color:darkslategray;
   grid-column: 2/3;
   margin: 3% auto;
-  border-bottom: 2px solid rgb(66, 61, 53);;
+  border-bottom: 2px solid rgb(66, 61, 53);
+  font-size: 200%;
 }
 
 h2 {
@@ -102,6 +103,7 @@ button {
   letter-spacing: 16px;
   font-style: bold;
 }
+
 
 @media (max-width: 990px);
 
