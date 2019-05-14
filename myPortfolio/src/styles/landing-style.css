@@ -1,0 +1,186 @@
+html {
+    color: white;
+    font-family: 'Halant', serif;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    padding-top: 2%;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 125%;
+    letter-spacing: .1em;
+    color: rgb(43,205,192);
+}
+
+
+nav a:hover {
+    color: white;
+    transition: ease-in 500ms;
+}
+
+.fa-facebook {
+    font-size: 115%;
+    color: rgb(43,205,192);
+  }
+  
+.fa-instagram {
+    font-size: 115%;
+    color: rgb(43,205,192);
+  }
+
+body {
+    display: grid;
+    grid-row: 50%  50%;
+    grid-template-areas: 
+    "header"
+    "articles";
+}
+
+header {
+    grid-area: "header";
+    background-color: rgb(43,205,192);
+    height: 100%;
+    
+}
+
+h1 {
+    font-size: 450%;
+    letter-spacing: .1em;
+    line-height: 5em;
+    padding-left: 25%;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 400%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+    margin: 0;
+}
+
+.articles {
+    grid-area: "articles";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(27,27,27);
+    height: 100%;
+    margin: 0px;
+}
+
+.articles a {
+    text-decoration: none;
+    color: white;
+}
+
+.box1 {
+    background-color: rgb(51,168,221);
+    height: 50px;
+    width:300px;
+    margin-left: 7%;
+}
+
+.box2 {
+    background-color: rgb(244,103,49);
+    height: 50px;
+    width:300px;
+    margin-left: 7%;
+}
+
+.box3 {
+    background-color: rgb(43,205,192);
+    height: 50px;
+    width:300px;
+    margin-left: 7%;
+}
+
+article {
+    padding: 80px;
+}
+
+article:hover {
+    transition: ease-in-out 2s;
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
+
+@media (max-width: 576px) {
+
+    header {
+        background-color: rgb(51,168,221);
+    }
+
+
+    .fa-facebook {
+        font-size: 85%;
+        color: rgb(51,168,221);
+      }
+      
+    .fa-instagram {
+        font-size: 85%;
+        color: rgb(51,168,221);
+      }
+
+    nav a {
+        font-size: 85%;
+        color:rgb(51,168,221);
+    }
+
+    h1 {
+        font-size: 300%;
+        line-height: 1em;
+        padding: 25% 5% 25% 20%;
+    }
+
+    h2 {
+        font-size: 200%;
+        letter-spacing: .1em;
+    }
+
+    p {
+        font-size: 115%;
+        width: 150px;
+        margin-left: 24%;
+        font-weight: bold;
+    }
+
+    .box1 {
+        height: 25px;
+        width: 150px;
+        margin-left: 24%;
+    }
+
+    .box2 {
+        height: 25px;
+        width: 150px;
+        margin-left: 24%;
+    }
+
+    .box3 {
+        height: 25px;
+        width: 150px;
+        margin-left: 24%;
+    }
+
+    .articles {
+        display: block;
+        background-color: rgb(247,245,246);
+        color: black;
+    }
+}
