@@ -9,22 +9,20 @@
     <script src="scripts/tictactoe.js"></script>
     <title>Tic Tac Toe</title>
 </head>
-<body>
-    
+<body onload="startGame();">
+    <div id="message">messages will go here</div>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
+        <div class="box" onclick="nextMove(this);"></div>
     </div>
     <div class="buttons">
-        <button type="button" class="X">X</button>
-        <button type="button" class="O">O</button>
         <button type="reset">reset</button>
     </div>
 </body>
