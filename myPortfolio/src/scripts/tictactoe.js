@@ -9,7 +9,23 @@ function setMessage(msg) {
 }
 
 function nextMove(box) {
-    box.innertext = document.turn;
+    if (box.innertext =="") {
+        box.innertext = document.turn;
+        switchTurn();
+    } else {
+        setMessage("That square is already used.");
+    }
+    
 
     
+}
+
+function switchTurn() {
+    if (document.turn =="X") {
+        document.turn = "O";
+    } else {
+        document.turn = "X";
+    }
+
+    setMessage("It's" + document.turn + "turn")
 }
