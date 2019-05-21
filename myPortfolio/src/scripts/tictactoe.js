@@ -1,31 +1,32 @@
-function startGame() {
-    document.turn = "X";
+var player="X";
 
-    setMessage(document.turn + "starts the game.");
+function startGame() {
+    setMessage(player + " starts the game.");
 }
 
 function setMessage(msg) {
-    document.getElementById("message").innertext = msg;
-}
-
-function nextMove(box) {
-    if (box.innertext =="") {
-        box.innertext = document.turn;
-        switchTurn();
-    } else {
-        setMessage("That square is already used.");
-    }
-    
-
-    
+    document.getElementById("message").innerText = msg;
 }
 
 function switchTurn() {
-    if (document.turn =="X") {
-        document.turn = "O";
+    if (player =="X") {
+        player = "O";
     } else {
-        document.turn = "X";
+        player = "X";
     }
-
-    setMessage("It's" + document.turn + "turn")
+    setMessage("It's " + player + " turn")
 }
+
+
+function ticTacToe(id) {
+    var square=document.getElementById(id);
+    console.log("player" + " " + player + " made this mark");
+    console.log(id);
+    if (square.innerText ==="") {
+        square.innerText = player;
+        switchTurn();
+    } else {
+        setMessage("That square is already used.");
+    } 
+}
+
