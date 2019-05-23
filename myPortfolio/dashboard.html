@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./styles/dashboard-style.css">
+    <link rel="stylesheet" href="./dashboard-style.css">
+    <script src="scripts/dashboard.js"></script>
 </head>
 <body>
     <section class="to-do">
@@ -54,6 +56,10 @@
             <li>feels like 68*</li>
             <li>Humidity 60%</li>
         </ul>
-    </section>    
+    </section>
+    <div class="geolocation">
+        <button onclick="myLocation()">Click for Location</button>
+        <p id="myLoc"></p>
+    </div>   
 </body>
 </html>
