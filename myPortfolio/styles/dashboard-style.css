@@ -24,12 +24,12 @@ body, html {
     flex-flow: row wrap;
     justify-content: space-around;
     border: 3px solid #4d4d4d;
-    background: rgba(211, 132, 42, 0.651);
+    background: lightgray;
   }
   .text {
     width: 90%;
     margin: 5px;
-    border: 1px rgb(113, 197, 193);
+    border: 1px lightgray;
     text-align: right;
     font: 20px;
     color: #4d4d4d;

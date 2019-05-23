@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard2-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.css">
+    <script src="scripts/dashboard2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/multiple.js/0.0.1/multiple.js"></script>
+</head>
+<body>
+    <aside>
+        <h1 class="greeting">Hey<br>there,<br>Kelly!</h1>
+    </aside>
+    <main>
+        <section class="weatherWidget">
+            <p>Currently 71°<br>
+            Partly Cloudy<br>
+            Feels Like 68°<br>
+            Humidity 60%
+            </p>
+        </section>
+        <section class="dateTimeDisplay">
+            <h2 class="date">May 23, 2019</h2>
+            <h2 class="time">07:48 pm</h2>
+        </section>
+        <div class="geolocation">
+            <button onclick="myLocation()">Click here to see the<br> coordinates of your location!</button>
+            <p id="myLoc"></p>
+        </div>
+        <div id="calculator">
+            <input class="text" id="displayBox">
+            <input type="button" value="C">
+            <input type="button" value="<--">
+            <input type="button" value="x^3">
+            <input type="button" value="+">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="-">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="*">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="/">
+            <input type="button" value="0">
+            <input type="button" value=".">
+            <input type="button" value="=">
+        </div>
+        <section class="toDo">
+            <ul><strong>Today's List</strong></ul>
+            <li>Finish blog post</li>
+            <li>Towers of Hanoi</li>
+            <li>Complete Dashboard</li>
+            <li><form>
+                Action Items:
+                <input type="message" name="action-item">
+                </form>
+            </li>
+        </section>
+    </main>
+</body>
+</html>

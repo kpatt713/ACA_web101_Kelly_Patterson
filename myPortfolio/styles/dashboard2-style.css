@@ -1,0 +1,140 @@
+/* font-family: 'Raleway Dots', cursive; */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5% 5% 5% 25%;
+    
+}
+.weatherWidget {
+    width: 250px;
+    height: 275px;
+    color: white;
+    margin: 2%;
+    text-align: center;
+    line-height: 2.5em;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(123, 64, 138, 0.753), rgba(118, 189, 199, 0.74));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.dateTimeDisplay {
+    width: 250px;
+    height: 275px;
+    color: white;
+    margin: 2%;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(123, 64, 138, 0.753), rgba(118, 189, 199, 0.74));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.dateTimeDisplay .date {
+    margin-top: 30%;
+}
+
+.geolocation {
+    width: 250px;
+    height: 275px;
+    color: white;
+    margin: 2%;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(123, 64, 138, 0.753), rgba(118, 189, 199, 0.74));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.geolocation button {
+    border: none;
+    background-color: white;
+    padding: 4%;
+    margin-top: 45%;
+}
+
+#calculator{
+    align-self: center;
+    display: flex;
+    width: 160px;
+    height: 200px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: lightgray;
+    padding: 5%;
+    margin: 2% 2% 2% 13%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(123, 64, 138, 0.753), rgba(118, 189, 199, 0.74));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.text {
+    width: 90%;
+    margin: 5px;
+    border: 1px lightgray;
+    text-align: right;
+    font: 20px;
+    color: #4d4d4d;
+  }
+  
+  input[type="button"]{
+    width: 25%;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background: rgb(113, 197, 193);
+    font-weight: bold;
+  }
+  
+  input[type="button"]:last-child {
+    width: 50%;
+    cursor: pointer;
+  }
+
+.toDo {
+    padding: 5%;
+    color: white;
+    margin: 2%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(123, 64, 138, 0.753), rgba(118, 189, 199, 0.74));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 1%;
+}
+form {
+    padding-top:5%;
+}
+strong {
+    font-weight: bolder;
+    font-size: 150%;
+}
+aside {
+    float: left;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 300%;
+    line-height: 2em;
+    letter-spacing: .1em;
+    color: rgba(123, 64, 138, 0.753);
+}
