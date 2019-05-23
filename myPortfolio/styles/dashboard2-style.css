@@ -39,7 +39,7 @@ main {
     background-repeat: no-repeat;
 }
 .dateTimeDisplay .date {
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .geolocation {
@@ -125,9 +125,9 @@ li {
 form {
     padding-top:5%;
 }
-strong {
+h2 {
     font-weight: bolder;
-    font-size: 150%;
+    font-size: 200%;
 }
 aside {
     float: left;
