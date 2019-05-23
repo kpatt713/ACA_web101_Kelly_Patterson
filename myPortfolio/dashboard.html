@@ -7,17 +7,19 @@
     <title>Dashboard</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/dashboard.js"></script>
-    <link rel="stylesheet" href="./dashboard-style.css">
+    <link rel="stylesheet" href="styles/dashboard-style.css">
 </head>
 <body>
     <section class="to-do">
-        <ul>Today's List</ul>
-        <li>Finish medium blog post</li>
-        <li>Code Online Resume</li>
-        <li>Complete Dashboard</li>
-        <li><form>
-            Action Items:
-            <input type="message" name="action-item">
+        <ul>
+            <h1 id="listHeader">Today's List</h1>
+            <li>Your to do item will be added to this list!</li>
+        </ul>
+        <div id="newItemButton"><button href="#">new item</button></div>
+        <li>
+            <form class="newItemForm">
+            <input type="text" id="action-item" placeholder="Enter your to do item here">
+            <input type="submit" id="add" value="add">
             </form>
         </li>
     </section>
