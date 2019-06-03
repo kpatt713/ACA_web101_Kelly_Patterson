@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+#tower {
+    margin-top: 30px;
+    width: 30%;
+    height: 60%;
+    background-color: whitesmoke;
+    
+}
+
+#disk {
+    border-radius: 25%;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+.disk-5 {
+    background-color: #610a13;
+    width: 350px;
+    height: 350px;
+    margin: 25px;
+    
+}
+
+.disk-4 {
+    background-color: #5186a9;
+    width: 300px;
+    height: 300px;
+    margin: 50px; 
+}
+
+.disk-3 {
+    background-color: #48cb7d;
+    width: 250px;
+    height: 250px;
+    margin: 75px; 
+}
+
+.disk-2 {
+    background-color: #563776;
+    width: 200px;
+    height: 200px;
+    margin: 100px; 
+}
+
+.disk-1 {
+    background-color: #f6606c;
+    width: 150px;
+    height: 150px;
+    margin: 125px; 
+}
